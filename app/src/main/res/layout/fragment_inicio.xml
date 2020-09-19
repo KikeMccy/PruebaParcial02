@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!-- ENCABEZADO -->
+
+    <!-- LISTA DE DATOS -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1eaa42"
+        android:elevation="4dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- IMAGEN MENU -->
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.10"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">¬
+
+            <TextView
+                android:id="@+id/circleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="28dp" />
+        </LinearLayout>
+        <!-- TEXTO BUSCANDO -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/headText"
+                android:layout_width="307dp"
+                android:layout_height="match_parent"
+                android:text="Universidad Técnica Estatal de Quevedo"
+                android:textAlignment="center"
+                android:textColor="@android:color/primary_text_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revistas OJS"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- IMAGEN USUARIO -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListaRevistas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
